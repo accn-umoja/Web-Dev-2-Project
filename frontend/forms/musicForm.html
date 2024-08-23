@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Music</title>
+    <link rel="stylesheet" href="../styles/forms.css">
+</head>
+<!-- Music Form -->
+<body>
+    <div class="forms-container padding-left">
+        <div class="padding-left">
+            <header class="text-right">
+                <a href="../forms.html" class="back-button">Go Back</a>
+            </header>
+            <h2>Add Music</h2>
+
+
+
+
+
+
+
+
+            <form id="addMedia-form" data-endpoint="addMusicToUser" type="music">
+
+
+
+
+
+
+
+                
+                <label for="music-title">Title:</label>
+                <input type="text" id="music-title" name="music-title" required>
+
+                <label for="music-artist">Artist:</label>
+                <input type="text" id="music-artist" name="music-artist" required>
+
+                <label for="music-album">Album:</label>
+                <input type="text" id="music-album" name="music-album" required>
+
+                <label for="music-genre">Genre:</label>
+                <input type="text" id="music-genre" name="music-genre" required>
+
+                <label for="music-release-date">Release Date:</label>
+                <input type="date" id="music-release-date" name="music-release-date" required>
+
+                <label for="music-duration">Duration (minutes):</label>
+                <input type="number" id="music-duration" name="music-duration" required>
+
+                <label for="music-label">Record Label:</label>
+                <input type="text" id="music-label" name="music-label" required>
+
+                <label for="music-language">Language:</label>
+                <input type="text" id="music-language" name="music-language" required>
+
+                <label for="music-image">Image URL:</label>
+                <input type="file" id="music-image" name="music-image" required>
+
+                <button type="submit">Add Music</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/mediaForms.js"></script>
+</body>
+</html>

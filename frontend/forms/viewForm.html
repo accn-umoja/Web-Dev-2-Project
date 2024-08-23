@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/forms.css">
+</head>
+<body>
+    <!-- Form View Page -->
+    <div class="view-container">
+        <div class="padding-left">
+            <!-- Sign Out Button -->
+            <div class="signout-button-container">
+                <a href="../signin.html" class="signout-button">Sign Out</a>
+            </div>
+            <header>
+                <h1>Update Media</h1>
+                <!-- Back Button -->
+                <a href="../home.html" class="back-button">Back to Home</a>
+            </header>
+                <!-- View Mode -->
+            <div id="view-mode">
+                <div class="form-row">
+                    <label>Title:</label>
+                    <span class="value">Sample Title</span>
+                </div>
+                <div class="form-row">
+                    <label>Artist:</label>
+                    <span class="value">Sample Artist</span>
+                </div>
+                <div class="form-row">
+                    <label>Album:</label>
+                    <span class="value">Sample Album</span>
+                </div>
+                <div class="form-row">
+                    <label>Genre:</label>
+                    <span class="value">Sample Genre</span>
+                </div>
+                <div class="form-row">
+                    <label>Release Date:</label>
+                    <span class="value">2024-07-30</span>
+                </div>
+                <div class="form-row">
+                    <label>Duration (minutes):</label>
+                    <span class="value">3</span>
+                </div>
+                <div class="form-row">
+                    <label>Record Label:</label>
+                    <span class="value">Sample Label</span>
+                </div>
+                <div class="form-row">
+                    <label>Language:</label>
+                    <span class="value">English</span>
+                </div>
+                <div class="form-row">
+                    <label>Image:</label>
+                    <img src="sample-image-url.jpg" alt="Music Image" style="width: 100px;">
+                </div>
+                <div class="buttons">
+                    <button onclick="toggleEdit(true)">Edit</button>
+                </div>
+            </div>
+            
+            <!-- Edit Mode -->
+            <div id="edit-mode" style="display: none;">
+                <form>
+                    <div class="form-row">
+                        <label for="music-title">Title:</label>
+                        <input type="text" id="music-title" name="music-title" value="Sample Title" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-artist">Artist:</label>
+                        <input type="text" id="music-artist" name="music-artist" value="Sample Artist" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-album">Album:</label>
+                        <input type="text" id="music-album" name="music-album" value="Sample Album" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-genre">Genre:</label>
+                        <input type="text" id="music-genre" name="music-genre" value="Sample Genre" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-release-date">Release Date:</label>
+                        <input type="date" id="music-release-date" name="music-release-date" value="2024-07-30" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-duration">Duration (minutes):</label>
+                        <input type="number" id="music-duration" name="music-duration" value="3" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-label">Record Label:</label>
+                        <input type="text" id="music-label" name="music-label" value="Sample Label" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-language">Language:</label>
+                        <input type="text" id="music-language" name="music-language" value="English" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="music-image">Image URL:</label>
+                        <input type="file" id="music-image" name="music-image">
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Save</button>
+                        <button type="button" onclick="toggleEdit(false)">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="delete-button-container">
+                <a href="" class="delete-button">Delete</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleEdit(editMode) {
+            var viewMode = document.getElementById('view-mode');
+            var editModeDiv = document.getElementById('edit-mode');
+            if (editMode) {
+                viewMode.style.display = 'none';
+                editModeDiv.style.display = 'block';
+            } else {
+                viewMode.style.display = 'block';
+                editModeDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+
+

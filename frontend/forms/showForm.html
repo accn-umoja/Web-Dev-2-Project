@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a TV Show</title>
+    <link rel="stylesheet" href="../styles/forms.css">
+</head>
+<!-- TV Form -->
+<body>
+    <div class="forms-container padding-left">
+        <div class="padding-left">
+            <header class="text-right">
+                <a href="../forms.html" class="back-button">Go Back</a>
+            </header>
+            <h2>Add a TV Show</h2>
+
+
+
+
+
+
+
+
+
+            <form id="addMedia-form" data-endpoint="addShowToUser" type="shows">
+
+
+
+
+
+
+                
+                <label for="tv-title">Title:</label>
+                <input type="text" id="tv-title" name="tv-title" required>
+
+                <label for="tv-creator">Creator:</label>
+                <input type="text" id="tv-creator" name="tv-creator" required>
+
+                <label for="tv-release-date">Release Date:</label>
+                <input type="date" id="tv-release-date" name="tv-release-date" required>
+
+                <label for="tv-genre">Genre:</label>
+                <input type="text" id="tv-genre" name="tv-genre" required>
+
+                <label for="tv-seasons">Number of Seasons:</label>
+                <input type="number" id="tv-seasons" name="tv-seasons" required>
+
+                <label for="tv-episodes">Number of Episodes:</label>
+                <input type="number" id="tv-episodes" name="tv-episodes" required>
+
+                <label for="tv-synopsis">Synopsis:</label>
+                <textarea id="tv-synopsis" name="tv-synopsis" rows="4" required></textarea>
+
+                <label for="show-image">Image URL:</label>
+                <input type="file" id="show-image" name="show-image" required>
+                
+                <button type="submit">Add TV Show</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/mediaForms.js"></script>
+</body>
+</html>

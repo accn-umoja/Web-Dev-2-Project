@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/signup.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+
+<body>
+    <div class="login-container">
+        <h1>Create Account</h1>
+        
+        <form id="signup-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="First and last name" >
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required >
+
+            <!-- <label for="email">Email</label>
+            <input type="email" id="email" name="email" > -->
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 4 characters" required >
+            <!-- <div id="strength-indicator"></div> -->
+            <div id="strength-indicator" style="width: 100px; height: 10px; background-color: lightgray; border-radius: 5px; margin-top: 5px;">
+                <div id="strength-bar" style="height: 100%; width: 0%; background-color: red; border-radius: 5px;"></div>
+            </div>
+
+            <label for="confirmPassword">Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="same pass..." required >
+
+            <button type="submit">Signup</button>
+
+            <br>
+            <a href="signin.html">Already have an account</a>
+            
+        </form>
+    </div>
+
+
+    <script src="js/signup.js"></script>
+    
+</body>
+</html>

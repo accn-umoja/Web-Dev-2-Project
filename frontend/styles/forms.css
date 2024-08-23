@@ -1,0 +1,222 @@
+/* General Styling */
+/* ---------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+header{
+    padding-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.padding-left{
+    padding-left: 35px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Buttons */
+/* ---------------------------------------------------------------- */
+button, .back-button, .signup-button, .signout-button, .delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+button:hover, .back-button:hover, .signup-button:hover{
+    background-color: #004691ef;
+}
+.signup-button, button{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signup-button{
+    width: 182.4px;
+    color: #fff;
+}
+
+.signout-button-container, .delete-button-container {
+    position: inline-block;
+    text-align: right;
+}
+
+.signout-button, .delete-button {
+    background-color: #e74c3c;
+}
+
+.signout-button:hover, .delete-button:hover{
+    background-color: #832b22;
+}
+
+#button-filter button{
+    width: auto;
+}
+
+#button-filter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+/* Containers */
+/* ---------------------------------------------------------------- */
+.login-container, .home-container, .forms-container, .view-container {
+    max-width: 800px;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Login */
+/* ---------------------------------------------------------------- */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+/* ---------------------------------------------------------------- */
+.div-form{
+    width: 100%; 
+    height: 60vh; 
+    border: none; 
+    margin: 5px;
+    background-color: #D1CFCB;
+    border-radius: 5px;
+    
+}
+
+.forms-container{
+    overflow: auto; 
+    box-sizing: border-box;
+}
+
+form label, div label {
+    display: block;
+    margin-top: 10px;
+}
+form input, form textarea, form button {
+    display: block;
+}
+
+input, div span {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+div span{
+    background-color: #fff;
+}
+
+#view-mode {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Home */
+/* ---------------------------------------------------------------- */
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media List */
+/* ---------------------------------------------------------------- */
+.media-container {
+    width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+#media-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px; 
+}
+
+.media-item,
+.media-item-placeholder {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px; 
+    text-align: center;
+    position: relative;
+}
+
+.media-item img,
+.media-item-placeholder img {
+    max-width: 100%;
+    height: auto;
+}
+
+.media-item div {
+    padding: 4px;
+    overflow: hidden;
+    text-overflow: clip; 
+    white-space: normal; 
+}
+
+.plus-sign {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.add-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.media-item-placeholder {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
