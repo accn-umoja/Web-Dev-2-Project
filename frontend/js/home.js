@@ -31,16 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = await response.json();
             console.log(`${listType} data:`, data);
 
-
-
-
-
-
-
-
-
-            
-
             const container = document.getElementById(`${listType}-list`);
 
             // Create and insert new HTML elements
@@ -49,16 +39,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 mediaItem.className = 'media-item';
 
                 const img = document.createElement('img');
-                img.className = 'image-example'
                 img.src = item['image']; 
 
                 const title = document.createElement('div');
                 const link = document.createElement('a');
-                link.href = '';
 
-                link.textContent = item['movie-title'];
+                // if (item['movie-title']) {
+                //     link.textContent = item['movie-title'];
+                // } else if (item['tv-title']) {
+                //     link.textContent = item['tv-title'];
+                // } else if (item['book-title']) {
+                //     link.textContent = item['book-title'];
+                // } else if (item['music-title']) {
+                //     link.textContent = item['music-title'];
+                // } else {
+                //     link.textContent = 'Unknown Title';
+                // }
 
-                link.href = 'forms/viewPage.html'; // Where to go when specific media is clicked 
+                link.textContent = item['movie-title'] ||  item['tv-title'] ||  item['book-title']  ||item['music-title'];
+
+                // link.href = 'forms/viewPage.html'; // Where to go when specific media is clicked 
                 title.appendChild(link);
 
                 //Delete Button
@@ -102,23 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 container.appendChild(mediaItem);
 
             });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         } catch (error) {
             console.error(`${listType} fetch error:`, error);

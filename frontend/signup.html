@@ -15,7 +15,7 @@
         
         <form id="signup-form">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="First and last name" >
+            <input type="text" id="name" name="name" placeholder="First and last name" required>
 
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required >
@@ -24,14 +24,14 @@
             <input type="email" id="email" name="email" > -->
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="At least 4 characters" required >
+            <input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" title="Create a strong password with a mix of uppercase and lowercase letters, numbers and symbols" required >
             <!-- <div id="strength-indicator"></div> -->
             <div id="strength-indicator" style="width: 100px; height: 10px; background-color: lightgray; border-radius: 5px; margin-top: 5px;">
                 <div id="strength-bar" style="height: 100%; width: 0%; background-color: red; border-radius: 5px;"></div>
             </div>
 
-            <label for="confirmPassword">Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="same pass..." required >
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm" title="Re-enter your password" required >
 
             <button type="submit">Signup</button>
 
