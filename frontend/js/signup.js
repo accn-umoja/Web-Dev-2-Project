@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // console.log('User ID saved to local storage');
             
 
-            // window.location.href = 'home.html'; // Redirect to home page
+            window.location.href = 'home.html'; // Redirect to home page
 
         })
         .catch(error => {

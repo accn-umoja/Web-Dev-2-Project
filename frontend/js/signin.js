@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // console.log(userId);
 
 
-            // window.location.href = 'home.html'; // Redirect to home page
+            window.location.href = 'home.html'; // Redirect to home page
             // window.location = 'home.html';
 
         })
